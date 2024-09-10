@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Exercise-2</title>
+</head>
+
+<body>
+    <!--
+Improve the number guesser so that it aks the user whether he or she wants to play
+again. repeat the entire game until user indicates that he or she is done
+-->
+
+    <script>
+        var que;
+        var ans;
+
+        ans = Math.floor(Math.random() * 10) + 1;
+
+    while (que != ans) {
+
+que = prompt("guess a number between 1 to 10.");
+
+if (ans == que) {
+    alert("nice!! guess are you wacth'in me.");
+}
+
+if (ans < que) {
+    alert("gone to far come near boy");
+}
+
+if (ans > que) {
+    alert("nigga to small to see try again");
+
+}
+
+}
+
+// i am unable to make prompt for startinf this code again after asking user 
+
+    </script>
+
+</body>
+
+</html>

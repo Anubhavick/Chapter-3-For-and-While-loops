@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Exercise-1</title>
+</head>
+
+<body>
+
+    <!--
+    Modify the program so it give a total of five random math problem
+    but repeats each one until the user get the right answer. only move
+    on to the next question when the user gets a question correct
+    -->
+
+    <script>
+        var num1;
+        var num2;
+        var num3;
+        var num4;
+        var num5;
+
+        var que1;
+        var que2;
+        var que3;
+        var que4;
+        var que5;
+
+        var ans1;
+        var ans2;
+        var ans3;
+        var ans4;
+        var ans5;
+
+        num1 = Math.floor(Math.random() * 10) + 1;
+        num2 = Math.floor(Math.random() * 10) + 1;
+        num3 = Math.floor(Math.random() * 10) + 1;
+        num4 = Math.floor(Math.random() * 10) + 1;
+        num5 = Math.floor(Math.random() * 10) + 1;
+
+
+        ans1 = num1 + num2;
+        ans2 = num3 - num4;
+        ans3 = num5 / num1;
+        ans4 = num1 * num3;
+        ans5 = num5 + num4;
+
+
+        while (que1 != ans1) {
+            que1 = prompt("what we get after calc this equation " + num1 + "+" + num2);
+
+            if (que1 == ans1) {
+                alert("your math is correct")
+            } else { alert("idiot from where you learn math isn't too simple calc") }
+        }
+
+
+        while (que2 != ans2) {
+            que2 = prompt("what we get after calc this equation " + num3 + "-" + num4);
+
+            if (que2 == ans2) {
+                alert("your math is correct")
+            } else { alert("idiot from where you learn math isn't too simple calc") }
+        }
+
+        while (que3 != ans3) {
+            que3 = prompt("what we get after calc this equation " + num5 + "/" + num1);
+
+            if (que3 == ans3) {
+                alert("your math is correct")
+            } else { alert("idiot from where you learn math isn't too simple calc") }
+        }
+
+
+        while (que4 != ans4) {
+            que4 = prompt("what we get after calc this equation " + num1 + "*" + num3);
+
+            if (que4 == ans4) {
+                alert("your math is correct")
+            } else { alert("idiot from where you learn math isn't too simple calc") }
+        }
+
+
+        while (que5 != ans5) {
+            que5 = prompt("what we get after calc this equation " + num5 + "+" + num4);
+
+            if (que5 == ans5) {
+                alert("your math is correct")
+            } else { alert("idiot from where you learn math isn't too simple calc") }
+
+        }
+
+    </script>
+</body>
+
+</html>
